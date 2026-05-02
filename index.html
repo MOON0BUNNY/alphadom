@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Риэлтор в Москве | Визитка</title>
+  <meta name="description" content="Профессиональные услуги риелтора в Москве: покупка, продажа и аренда недвижимости.">
+  
+  <!-- Preconnect для шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Шрифты с display=swap для быстрого рендера + только нужные веса -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Preload только критичного лого (hero-логотип загружается ниже) -->
+  <link rel="preload" as="image" href="chrome_y9RtW26etE.png">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="video-background">
+    <video autoplay muted loop playsinline preload="none" disableRemotePlayback>
+        <source src="fon-web.mp4" type="video/mp4">
+    </video>
+    <div class="video-background-blur"></div>
+    <div class="video-glow"></div>
+   </div>
+  <header class="topbar">
+    <a class="brand" href="#hero" aria-label="АЛЬФАДОМ — на главную">
+      <img src="chrome_y9RtW26etE.png" alt="Логотип АЛЬФАДОМ" decoding="async">
+      <span>АЛЬФАДОМ</span>
+    </a>
+    
+    <nav class="nav-desktop">
+      <a href="#hero">Главная</a>
+      <a href="#services">Услуги</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    
+    <!-- Гамбургер-меню для мобильных -->
+    <button class="hamburger" aria-label="Меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav">
+      <a href="#hero">Главная</a>
+      <a href="#services">Услуги</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    
+    <div class="top-actions">
+      <a class="top-telegram" href="https://t.me/VladimirKuli" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path d="M21.5 4.7L18.4 19c-.2 1-1 1.2-1.8.8l-4.1-3-2 1.9c-.2.2-.4.4-.8.4l.3-4.2 7.8-7c.3-.3-.1-.5-.5-.2L7.7 13.8l-4-1.3c-.9-.3-.9-.9.2-1.3l15.5-6c.8-.3 1.5.2 1.1 1.5z"/>
+          </svg>
+        </span>
+        <span>Telegram</span>
+      </a>
+      <a class="top-vk" href="https://vk.com/id336162517" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+        <span class="icon" aria-hidden="true">
+          <img src="icons8-vk-48.png" alt="" width="16" height="16">
+        </span>
+        <span>VK (ВКонтакте)</span>
+      </a>
+      <a class="top-phone" href="tel:+79104900146" aria-label="Позвонить">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path d="M22 16.9v2.7a1.8 1.8 0 0 1-2 1.8 17.8 17.8 0 0 1-7.8-2.8 17.4 17.4 0 0 1-5.4-5.4A17.8 17.8 0 0 1 4 5.4a1.8 1.8 0 0 1 1.8-2H8.5a1.8 1.8 0 0 1 1.8 1.5c.1 1 .4 2 .8 2.9a1.8 1.8 0 0 1-.4 1.9L9.5 10.9a14.4 14.4 0 0 0 3.6 3.6l1.2-1.2a1.8 1.8 0 0 1 1.9-.4c.9.4 1.9.7 2.9.8a1.8 1.8 0 0 1 1.5 1.8z"/>
+          </svg>
+        </span>
+        <span>+7 910 490-01-46</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container hero-content">
+        <div class="hero-logo-top" aria-hidden="true">
+          <img src="logo-hero.png" alt="Логотип АЛЬФАДОМ" decoding="async">
+        </div>
+        <p class="label">Недвижимость в Москве</p>
+        <p class="hero-company">АЛЬФАДОМ</p>
+        <h1>Найдите свой идеальный дом</h1>
+        <p>
+          Ищете квартиру, дом или инвестиционный объект? Команда АЛЬФАДОМ подберет лучший вариант
+          под ваш запрос, бюджет и сроки, полностью сопровождая сделку от первого показа до выдачи ключей.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contacts">Оставить заявку</a>
+          <a class="btn btn-ghost" href="tel:+79104900146">Позвонить сейчас</a>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-item">
+            <strong>12+ лет</strong>
+            <span>опыта в недвижимости</span>
+          </article>
+          <article class="stat-item">
+            <strong>900+</strong>
+            <span>успешных сделок</span>
+          </article>
+          <article class="stat-item">
+            <strong>24/7</strong>
+            <span>поддержка клиентов</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-shell">
+      <section id="services" class="section">
+        <div class="container">
+          <h2 class="reveal">Профессиональные услуги риелтора</h2>
+          <p class="reveal-text">
+            Наша компания предлагает широкий спектр услуг в сфере недвижимости. Мы помогаем вам с покупкой,
+            продажей и арендой объектов. С нами вы получите надежную поддержку и профессиональный подход к каждому делу.
+          </p>
+          <div class="service-cards">
+            <article class="service-card reveal-scale">
+              <h3>Покупка недвижимости</h3>
+              <p>Подберем объекты по вашему бюджету, проверим документы и сопроводим сделку до получения ключей.</p>
+            </article>
+            <article class="service-card reveal-scale">
+              <h3>Продажа объектов</h3>
+              <p>Оценим рыночную стоимость, подготовим объект и приведем реальных покупателей в кратчайшие сроки.</p>
+            </article>
+            <article class="service-card reveal-scale">
+              <h3>Аренда без рисков</h3>
+              <p>Поможем безопасно сдать или арендовать недвижимость с юридической проверкой и прозрачными условиями.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section">
+        <div class="container">
+          <h2 class="reveal">Отзывы клиентов</h2>
+          <div class="reviews-grid">
+            <article class="review reveal-scale">
+              <h3>Анна Сидорова</h3>
+              <p>Я осталась очень довольна услугами этой компании. Профессиональные риелторы помогли мне быстро найти идеальную квартиру. Рекомендую всем!</p>
+            </article>
+            <article class="review reveal-scale">
+              <h3>Иван Петров</h3>
+              <p>Отличная команда! Они сделали все возможное, чтобы помочь мне продать мой дом. Быстро и по хорошей цене. Спасибо!</p>
+            </article>
+            <article class="review reveal-scale">
+              <h3>Мария Кузнецова</h3>
+              <p>Благодаря этой компании я нашла прекрасное жилье. Очень профессионально и быстро. Рекомендую их услуги всем!</p>
+            </article>
+            <article class="review reveal-scale">
+              <h3>Сергей Иванов</h3>
+              <p>Работа с этой компанией была приятной. Специалисты всегда на связи и готовы помочь. Я остался доволен!</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="advantages" class="section">
+        <div class="container">
+          <h2 class="reveal">Наши преимущества</h2>
+          <ul class="advantages-list">
+            <li class="reveal">Индивидуальный подход к каждому клиенту.</li>
+            <li class="reveal">Широкий выбор объектов недвижимости.</li>
+            <li class="reveal">Опытные и квалифицированные риелторы.</li>
+            <li class="reveal">Гарантия безопасности сделок.</li>
+            <li class="reveal">Полное сопровождение на всех этапах.</li>
+            <li class="reveal">Конкурентные цены на услуги.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="reveal">О компании</h2>
+          <div class="about-layout">
+            <figure class="about-photo reveal-left">
+              <img src="agent-photo.png" alt="Эксперт по недвижимости АЛЬФАДОМ" loading="lazy" decoding="async" fetchpriority="low">
+              <figcaption>
+                <span class="about-photo-name">Владимир Куликов</span>
+                <span class="about-photo-role">Эксперт по недвижимости АЛЬФАДОМ</span>
+              </figcaption>
+            </figure>
+            <div class="about-right reveal">
+              <div class="about-content">
+                <p class="about-text">
+                  Наша компания предоставляет полный спектр услуг в сфере недвижимости. Мы работаем на рынке Москвы и помогаем
+                  нашим клиентам в покупке, продаже и аренде квартир, домов и коммерческой недвижимости. Наша команда
+                  профессиональных риелторов имеет богатый опыт и готова предложить индивидуальные решения, учитывающие все ваши пожелания.
+                  Мы ценим каждого клиента и стремимся к максимальному удовлетворению ваших потребностей.
+                </p>
+                <div class="about-points">
+                  <span>Персональный эксперт на каждом этапе</span>
+                  <span>Юридическая безопасность сделок</span>
+                  <span>Реальные рыночные цены без переплат</span>
+                </div>
+              </div>
+              <aside class="about-note reveal-right">
+                <p class="about-note-title">Работаем по Москве и МО</p>
+                <p>Подбираем объекты под ваш запрос, ведем переговоры и закрываем сделку с полной юридической проверкой.</p>
+                <a href="#contacts">Назначить консультацию</a>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="section contacts">
+        <div class="container">
+          <h2 class="reveal">Наши контакты</h2>
+          <div class="contacts-grid">
+            <div class="contact-info reveal-left">
+              <p class="contact-title">Свяжитесь с нами</p>
+              <p><span>Телефон</span><a href="tel:+79104900146">+7 910 490-01-46</a></p>
+              <p><span>Telegram</span><a href="https://t.me/VladimirKuli" target="_blank" rel="noopener noreferrer">@VladimirKuli</a></p>
+              <p><span>Email</span><a href="mailto:borumiro@mail.ru">borumiro@mail.ru</a></p>
+              <p><span>Адрес</span>Москва, улица Шухова, 18</p>
+              <a class="contact-cta reveal-scale" href="tel:+79104900146">Позвонить сейчас</a>
+            </div>
+            <div class="map-wrap reveal-right">
+              <iframe
+                class="map"
+                src="https://yandex.ru/map-widget/v1/?ll=37.610440%2C55.716904&mode=whatshere&whatshere%5Bpoint%5D=37.610440%2C55.716904&whatshere%5Bzoom%5D=17&z=17"
+                title="Карта: Москва, улица Шухова, 18"
+                loading="lazy">
+              </iframe>
+              <p class="map-link">
+                <a href="https://yandex.ru/maps/?ll=37.610440%2C55.716904&mode=routes&rtext=~55.716904%2C37.610440&rtt=auto&z=17" target="_blank" rel="noopener noreferrer">
+                  Открыть в Яндекс.Картах
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="bottom-text-overlay">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="chrome_y9RtW26etE.png" alt="АЛЬФАДОМ">
+        </div>
+        <p class="footer-tagline">Ваш надёжный эксперт в недвижимости</p>
+      </div>
+      <div class="footer-info">
+        <p class="footer-text">©2020-2026 Компания «АЛЬФАДОМ»</p>
+        <p class="footer-subtext">Все виды услуг в сфере недвижимости</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://t.me/VladimirKuli" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M21.5 4.7L18.4 19c-.2 1-1 1.2-1.8.8l-4.1-3-2 1.9c-.2.2-.4.4-.8.4l.3-4.2 7.8-7c.3-.3-.1-.5-.5-.2L7.7 13.8l-4-1.3c-.9-.3-.9-.9.2-1.3l15.5-6c.8-.3 1.5.2 1.1 1.5z"/>
+          </svg>
+        </a>
+        <a href="https://vk.com/id336162517" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="ВКонтакте">
+          <img src="icons8-vk-48.png" alt="ВКонтакте" width="16" height="16">
+        </a>
+        <a href="tel:+79104900146" class="social-link" aria-label="Позвонить">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M22 16.9v2.7a1.8 1.8 0 0 1-2 1.8 17.8 17.8 0 0 1-7.8-2.8 17.4 17.4 0 0 1-5.4-5.4A17.8 17.8 0 0 1 4 5.4a1.8 1.8 0 0 1 1.8-2H8.5a1.8 1.8 0 0 1 1.8 1.5c.1 1 .4 2 .8 2.9a1.8 1.8 0 0 1-.4 1.9L9.5 10.9a14.4 14.4 0 0 0 3.6 3.6l1.2-1.2a1.8 1.8 0 0 1 1.9-.4c.9.4 1.9.7 2.9.8a1.8 1.8 0 0 1 1.5 1.8z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay для мобильного меню -->
+  <div class="nav-overlay"></div>
+
+  <script>
+    // Мобильное меню
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const navLinks = document.querySelectorAll('.nav a');
+
+    function toggleMenu() {
+      const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !isExpanded);
+      nav.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      document.body.style.overflow = !isExpanded ? 'hidden' : '';
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (nav.classList.contains('active')) {
+          toggleMenu();
+        }
+      });
+    });
+
+    // Анимации при скролле — IntersectionObserver (производительнее scroll event)
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -100px 0px', threshold: 0.1 });
+
+      document.querySelectorAll(
+        '.service-card, .review, .advantages-list li, .about-photo, .about-note, .contact-info, .map-wrap, h2, p'
+      ).forEach(el => revealObserver.observe(el));
+    } else {
+      // Fallback: показать всё сразу
+      document.querySelectorAll(
+        '.service-card, .review, .advantages-list li, .about-photo, .about-note, .contact-info, .map-wrap, h2, p'
+      ).forEach(el => el.classList.add('active'));
+    }
+
+    // Параллакс — только на десктопе, throttled через rAF
+    const hero = document.querySelector('.hero');
+    let parallaxTicking = false;
+
+    if (window.innerWidth > 1023 && hero && !prefersReducedMotion) {
+      window.addEventListener('scroll', () => {
+        if (!parallaxTicking) {
+          requestAnimationFrame(() => {
+            hero.style.backgroundPositionY = `${window.pageYOffset * 0.3}px`;
+            parallaxTicking = false;
+          });
+          parallaxTicking = true;
+        }
+      }, { passive: true });
+    }
+
+    // Плавный скролл для якорных ссылок
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: prefersReducedMotion ? 'auto' : 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

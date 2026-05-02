@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АЛЬФАДОМ - Эксперт по недвижимости</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .photo-section {
+            flex: 1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            min-height: 400px;
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 3px dashed rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .content-section {
+            flex: 1.5;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .expert-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .expert-title {
+            font-size: 18px;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .location {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .location-text {
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .services {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 16px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Малые ноутбуки и планшеты в альбомной ориентации */
+        @media (max-width: 1024px) {
+            .card {
+                flex-direction: column;
+                max-width: 600px;
+            }
+
+            .photo-section {
+                min-height: 280px;
+                padding: 20px;
+            }
+
+            .photo-placeholder {
+                max-width: 280px;
+                height: 280px;
+            }
+
+            .content-section {
+                padding: 30px;
+            }
+
+            .expert-name {
+                font-size: 26px;
+            }
+
+            .cta-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Планшеты в портретной ориентации и малые экраны */
+        @media (max-width: 768px) {
+            .card {
+                max-width: 100%;
+            }
+
+            .photo-section {
+                min-height: 250px;
+                padding: 15px;
+            }
+
+            .photo-placeholder {
+                max-width: 220px;
+                height: 220px;
+            }
+
+            .content-section {
+                padding: 25px;
+            }
+
+            .expert-name {
+                font-size: 24px;
+            }
+
+            .expert-title {
+                font-size: 16px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .cta-button {
+                font-size: 14px;
+                padding: 14px 25px;
+            }
+        }
+
+        /* Мобильные устройства */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .card {
+                border-radius: 15px;
+            }
+
+            .photo-section {
+                min-height: 200px;
+                padding: 10px;
+            }
+
+            .photo-placeholder {
+                max-width: 180px;
+                height: 180px;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .expert-name {
+                font-size: 20px;
+            }
+
+            .expert-title {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .description {
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+
+            .features {
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .feature-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+
+            .feature-text {
+                font-size: 13px;
+            }
+
+            .location {
+                padding: 12px 15px;
+                margin-bottom: 20px;
+            }
+
+            .services {
+                font-size: 13px;
+                margin-bottom: 20px;
+            }
+
+            .cta-button {
+                font-size: 13px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="photo-section">
+            <div class="photo-placeholder">
+                <!-- Вставьте сюда фото эксперта -->
+                <img src="path/to/your/photo.jpg" alt="Владимир Куликов" onerror="this.style.display='none'; this.parentNode.innerText='Разместите здесь фото эксперта'">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h1 class="expert-name">Владимир Куликов</h1>
+            <p class="expert-title">Эксперт по недвижимости АЛЬФАДОМ</p>
+
+            <p class="description">
+                Наша компания предоставляет полный спектр услуг в сфере недвижимости. 
+                Мы работаем на рынке Москвы и помогаем нашим клиентам в покупке, продаже 
+                и аренде квартир, домов и коммерческой недвижимости. Наша команда 
+                профессиональных риелторов имеет богатый опыт и готова предложить 
+                индивидуальные решения, учитывающие все ваши пожелания.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <span class="feature-text">Персональный эксперт на каждом этапе</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <span class="feature-text">Юридическая безопасность сделок</span>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <span class="feature-text">Реальные рыночные цены без переплат</span>
+                </div>
+            </div>
+
+            <div class="location">
+                <p class="location-text">📍 Работаем по Москве и МО</p>
+            </div>
+
+            <p class="services">
+                Подбираем объекты под ваш запрос, ведем переговоры и закрываем сделку 
+                с полной юридической проверкой.
+            </p>
+
+            <button class="cta-button">Назначить консультацию</button>
+        </div>
+    </div>
+</body>
+</html>
